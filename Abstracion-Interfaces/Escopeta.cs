@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstracion
 {
-    public class Escopeta : Arma
+    public class Escopeta : Arma, Interface1
     {
         public override void Disparar()
         {

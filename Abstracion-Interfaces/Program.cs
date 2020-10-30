@@ -32,11 +32,19 @@ namespace Abstracion
 
             foreach (var Clase in Gun)
             {
-                Console.WriteLine($"{Clase.Tipo} : {Clase.Modelo} {Clase.año}");
+                Console.WriteLine($"Usando Abstracion:\n{Clase.Tipo} : {Clase.Modelo} {Clase.año}");
                 Clase.Disparar();
                 
             }
-
+            List<Interface1> Gun2 = new List<Interface1>();
+            Gun2.Add(Rifle);
+            Gun2.Add(Shotgun);
+            foreach (var Clase in Gun2)
+            {
+                Console.WriteLine($"Usando Interfaces:");
+                Clase.Disparar();
+            }
+           
             Console.ReadKey();
         }
     }

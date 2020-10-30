@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstracion
 {
-   public class Rifle : Arma
+   public class Rifle : Arma, Interface1
     {
         public override void Disparar()
         {
